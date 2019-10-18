@@ -1,0 +1,31 @@
+{
+  "name": "jameshowell",
+  "version": "1.0.0",
+  "description": "Portfolio and Blog for James Howell",
+  "main": "index.js",
+  "scripts": {
+    "clean": "lerna clean",
+    "deploy": "lerna run deploy",
+    "empty-cache": "rimraf frontend/.cache",
+    "init": "cd backend && sanity init && lerna run graphql-deploy",
+    "graphql-deploy": "lerna run graphql-deploy",
+    "postinstall": "lerna bootstrap",
+    "sanity-deploy": "lerna run sanity-deploy",
+    "start": "lerna run empty-cache && lerna run start --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameshowelldev/jameshowell.git"
+  },
+  "author": "James Howell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameshowelldev/jameshowell/issues"
+  },
+  "homepage": "https://github.com/jameshowelldev/jameshowell#readme",
+  "dependencies": {
+    "lerna": "^3.16.5",
+    "rimraf": "^3.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "jameshowelldev-frontend",
+  "private": true,
+  "description": "Gatsby.js front-end of jameshowell.dev",
+  "version": "0.1.0",
+  "author": "James Howell <jhowell.1985@gmail.com>",
+  "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/image-url": "^0.140.15",
+    "babel-plugin-styled-components": "^1.10.6",
+    "dotenv": "^8.1.0",
+    "gatsby": "^2.15.31",
+    "gatsby-image": "^2.2.24",
+    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby-plugin-offline": "^3.0.12",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-sharp": "^2.2.28",
+    "gatsby-plugin-styled-components": "^3.1.8",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.29",
+    "gatsby-source-sanity": "^5.0.3",
+    "gatsby-transformer-sharp": "^2.2.20",
+    "moment": "^2.24.0",
+    "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
