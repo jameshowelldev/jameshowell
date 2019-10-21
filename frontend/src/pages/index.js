@@ -6,50 +6,53 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TileGrid from '../components/tile-grid'
 import Container from '../components/container'
+import Image from '../components/image'
 
 export const query = graphql`
-         query IndexPageQuery {
-           posts: allSanityPost {
-             edges {
-               node {
-                 _id
-                 title
-                 publishedAt
-                 slug {
-                   current
-                 }
-                 categories {
-                   _id
-                   title
-                 }
-                 _rawExcerpt
-                 mainImage {
-                   crop {
-                     _key
-                     _type
-                     bottom
-                     left
-                     right
-                     top
-                   }
-                   hotspot {
-                     _key
-                     _type
-                     height
-                     width
-                     x
-                     y
-                   }
-                   asset {
-                     _id
-                   }
-                   alt
-                 }
-               }
-             }
-           }
-         }
-       `
+  query IndexPageQuery {
+    posts: allSanityPost {
+      edges {
+        node {
+          _id
+          title
+          publishedAt
+          series
+          part
+          slug {
+            current
+          }
+          categories {
+            _id
+            title
+          }
+          _rawExcerpt
+          mainImage {
+            crop {
+              _key
+              _type
+              bottom
+              left
+              right
+              top
+            }
+            hotspot {
+              _key
+              _type
+              height
+              width
+              x
+              y
+            }
+            asset {
+              _id
+            }
+            alt
+          }
+        }
+      }
+    }
+  }
+`
 
 const IndexPage = (props) => {
   const { data } = props
@@ -58,9 +61,25 @@ const IndexPage = (props) => {
     <Layout>
       <SEO title="Home" />
       <Container element="section">
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
+        <div>
+          <h1>Hi I&lsquo;m James</h1>
+          <p>
+            I&lsquo;m a London-based front-end developer with over a decade of
+            experience in the advertising and banking industries.
+          </p>
+          <p>
+            I&lsquo;m passionate about crafting beautiful UIs by writing code
+            which looks as flawless as the design it defines. I love React, Node
+            and Atomic Design and have worked for brands including Barclays,
+            Sky,Marks &amp; Spencer and Virgin Active.
+          </p>
+        </div>
+        {/* <Image
+          imageObj={mainImage}
+          width="600"
+          widthRatio="16"
+          heightRatio="9"
+        /> */}
       </Container>
       <Container>
         <TileGrid

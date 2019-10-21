@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Tile from './tile'
+import { StyledH2 } from './typography'
 
 
 const StyledTileList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 25px;
+  grid-gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ const TileGrid = (props) => {
   return (
     <div>
       { title && (
-        <h2>{title}</h2>
+        <StyledH2 tag="h2">{title}</StyledH2>
       )}
       { nodes && (
         <StyledTileList>

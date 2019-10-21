@@ -17,6 +17,8 @@ export const query = graphql`
       }
       relatedPosts {
         title
+        series
+        part
         _id
         publishedAt
         slug {
